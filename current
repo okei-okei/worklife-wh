@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo '# info of current directory'
+pwd
+ls -l
