@@ -1,9 +1,31 @@
-<input id="hourlyWage" placeholder="時給" />
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>収支シミュレーター</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>収支シミュレーター</h1>
+    </header>
 
-<input id="hours" placeholder="週労働時間" />
+    <div style="padding: 40px">
+      <input id="hourlyWage" type="number" placeholder="時給(NZD)" />
+      <br /><br />
 
-<input id="rent" placeholder="週家賃" />
+      <input id="hours" type="number" placeholder="週労働時間" />
+      <br /><br />
 
-<button onclick="calculate()">計算</button>
+      <input id="rent" type="number" placeholder="週家賃(NZD)" />
+      <br /><br />
 
-<h2 id="result"></h2>
+      <button onclick="calculate()">計算する</button>
+
+      <h2 id="result"></h2>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
