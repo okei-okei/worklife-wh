@@ -4,38 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>求人一覧</title>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header class="header">
       <h1>求人一覧</h1>
+
       <nav>
         <a href="index.html">ホーム</a>
+        <a href="properties.html">物件</a>
+        <a href="simulator.html">シミュレーター</a>
       </nav>
     </header>
 
-    <section class="features">
-      <div class="card">
-        <h3>Kitchen Hand</h3>
-        <p>時給: 25 NZD</p>
-        <p>勤務地: Auckland</p>
-      </div>
+    <div style="padding: 20px">
+      <input type="text" id="searchInput" placeholder="都市名で検索" />
+    </div>
 
-      <div class="card">
-        <h3>Farm Worker</h3>
-        <p>時給: 27 NZD</p>
-        <p>勤務地: Hamilton</p>
-      </div>
+    <section id="job-list" class="features"></section>
 
-      <div class="card">
-        <h3>Cafe Staff</h3>
-        <p>時給: 26 NZD</p>
-        <p>勤務地: Wellington</p>
-      </div>
-    </section>
+    <script src="js/jobs.js"></script>
   </body>
 </html>
-<a href="index.html">ホーム</a>
-<a href="jobs.html">求人</a>
-<a href="properties.html">物件</a>
-<a href="simulator.html">シミュレーター</a>

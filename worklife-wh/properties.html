@@ -6,6 +6,7 @@
     <title>物件一覧</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <input type="text" id="searchInput" placeholder="都市名で検索" />
   <body>
     <header class="header">
       <h1>物件一覧</h1>
@@ -14,25 +15,9 @@
       </nav>
     </header>
 
-    <section class="features">
-      <div class="card">
-        <h3>Private Room</h3>
-        <p>250 NZD/week</p>
-        <p>Auckland CBD</p>
-      </div>
+    <section id="property-list" class="features"></section>
 
-      <div class="card">
-        <h3>Shared House</h3>
-        <p>180 NZD/week</p>
-        <p>Hamilton</p>
-      </div>
-
-      <div class="card">
-        <h3>Studio Room</h3>
-        <p>320 NZD/week</p>
-        <p>Wellington</p>
-      </div>
-    </section>
+    <script src="js/properties.js"></script>
   </body>
 </html>
 <a href="index.html">ホーム</a>

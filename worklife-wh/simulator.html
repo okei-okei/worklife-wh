@@ -3,33 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>収支シミュレーター</title>
+    <title>生活シミュレーター | WorkLife WH</title>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header class="header">
-      <h1>収支シミュレーター</h1>
+      <h1>WorkLife WH</h1>
+
+      <nav>
+        <a href="index.html">ホーム</a>
+        <a href="jobs.html">求人</a>
+        <a href="properties.html">物件</a>
+        <a href="simulator.html">シミュレーター</a>
+      </nav>
     </header>
 
-    <div style="padding: 40px">
-      <input id="hourlyWage" type="number" placeholder="時給(NZD)" />
+    <main style="padding: 40px; max-width: 800px; margin: auto">
+      <h2>生活シミュレーター</h2>
+
+      <p>求人と物件を選択すると、予想収支を計算できます。</p>
+
+      <br />
+
+      <label for="jobSelect">求人を選択</label>
+      <br />
+
+      <select id="jobSelect">
+        <option value="">選択してください</option>
+      </select>
+
       <br /><br />
 
-      <input id="hours" type="number" placeholder="週労働時間" />
+      <label for="propertySelect">物件を選択</label>
+      <br />
+
+      <select id="propertySelect">
+        <option value="">選択してください</option>
+      </select>
+
       <br /><br />
 
-      <input id="rent" type="number" placeholder="週家賃(NZD)" />
+      <button onclick="calculateSimulation()">シミュレーションする</button>
+
       <br /><br />
 
-      <button onclick="calculate()">計算する</button>
+      <div class="card">
+        <h3>シミュレーション結果</h3>
 
-      <h2 id="result"></h2>
-    </div>
+        <div id="result">求人と物件を選択してください</div>
+      </div>
+    </main>
 
-    <script src="js/app.js"></script>
+    <script src="js/simulator.js"></script>
   </body>
 </html>
-<a href="index.html">ホーム</a>
-<a href="jobs.html">求人</a>
-<a href="properties.html">物件</a>
-<a href="simulator.html">シミュレーター</a>
