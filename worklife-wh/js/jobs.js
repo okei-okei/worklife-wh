@@ -25,3 +25,29 @@ document.getElementById("searchInput").addEventListener("input", (e) => {
 
   renderJobs(filtered);
 });
+
+document.getElementById("addJobBtn").addEventListener("click", () => {
+  const title = document.getElementById("jobTitle").value;
+
+  const wage = Number(document.getElementById("jobWage").value);
+
+  const city = document.getElementById("jobCity").value;
+
+  if (!title || !wage || !city) {
+    alert("全項目を入力してください");
+    return;
+  }
+
+  jobs.push({
+    id: Date.now(),
+    title,
+    wage,
+    city,
+  });
+
+  renderJobs(jobs);
+
+  document.getElementById("jobTitle").value = "";
+  document.getElementById("jobWage").value = "";
+  document.getElementById("jobCity").value = "";
+});

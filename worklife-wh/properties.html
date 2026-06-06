@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>物件一覧</title>
+    <title>物件一覧 | WorkLife WH</title>
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -19,9 +19,26 @@
       </nav>
     </header>
 
+    <div style="padding: 20px">
+      <h2>物件を追加</h2>
+
+      <input type="text" id="propertyTitle" placeholder="物件名" />
+
+      <br /><br />
+
+      <input type="number" id="propertyRent" placeholder="家賃 (NZD/week)" />
+
+      <br /><br />
+
+      <input type="text" id="propertyCity" placeholder="地域" />
+
+      <br /><br />
+
+      <button id="addPropertyBtn">物件追加</button>
+    </div>
+
     <section id="property-list" class="features"></section>
 
-    <script src="data/properties-data.js"></script>
     <script src="js/properties.js"></script>
   </body>
 </html>
